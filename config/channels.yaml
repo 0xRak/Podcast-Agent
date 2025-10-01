@@ -1,0 +1,108 @@
+aliases:
+  all_in: allinchamath
+  bankless: banklesshq
+  empire: empirepodcast
+  forward_guidance: ForwardGuidanceBW
+  joe_rogan: joerogan
+  latent_space: latentspacepod
+  lex: lexfridman
+  0xresearch: 0xresearchPodcast
+categories:
+  ai:
+  - lexfridman
+  - latentspacepod
+  - theaipodcast
+  business:
+  - allinchamath
+  - naval
+  crypto:
+  - empirepodcast
+  - ForwardGuidanceBW
+  - banklesshq
+  - 0xresearchPodcast
+  education:
+  - davidperell
+  general:
+  - joerogan
+channels:
+  ForwardGuidanceBW:
+    category: crypto
+    display_name: Forward Guidance
+    enabled: true
+    last_processed: '2025-09-25T11:00:51.541452'
+    priority: high
+    url: https://www.youtube.com/@ForwardGuidanceBW
+  allinchamath:
+    category: business
+    display_name: All-In with Chamath, Jason, Sacks & Friedberg
+    enabled: true
+    last_processed: null
+    priority: high
+    url: https://www.youtube.com/@allinchamath
+  banklesshq:
+    category: crypto
+    display_name: Bankless
+    enabled: true
+    last_processed: null
+    priority: high
+    url: https://www.youtube.com/@banklesshq
+  davidperell:
+    category: education
+    display_name: David Perell
+    enabled: true
+    last_processed: null
+    priority: medium
+    url: https://www.youtube.com/@davidperell
+  empirepodcast:
+    category: crypto
+    display_name: Empire
+    enabled: true
+    last_processed: null
+    priority: high
+    url: https://www.youtube.com/@empirepodcast
+  joerogan:
+    category: general
+    display_name: The Joe Rogan Experience
+    enabled: true
+    last_processed: null
+    priority: medium
+    url: https://www.youtube.com/@joerogan
+  latentspacepod:
+    category: ai
+    display_name: Latent Space
+    enabled: true
+    last_processed: null
+    priority: high
+    url: https://www.youtube.com/@latentspacepod
+  lexfridman:
+    category: ai
+    display_name: Lex Fridman Podcast
+    enabled: true
+    last_processed: '2025-09-12T16:57:43.346125'
+    priority: high
+    url: https://www.youtube.com/@lexfridman
+  naval:
+    category: business
+    display_name: Naval
+    enabled: true
+    last_processed: null
+    priority: high
+    url: https://www.youtube.com/@naval
+  theaipodcast:
+    category: ai
+    display_name: The AI Podcast
+    enabled: true
+    last_processed: null
+    priority: medium
+    url: https://www.youtube.com/@theaipodcast
+  0xresearchPodcast:
+    category: crypto
+    display_name: 0xResearch
+    enabled: true
+    last_processed: '2025-09-25T11:56:05.377'
+    priority: high
+    url: https://www.youtube.com/@0xresearchPodcast
+default_settings:
+  days_lookback: 7
+  output_directory: podcast_summaries
+  videos_per_channel: 1

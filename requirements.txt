@@ -1,0 +1,11 @@
+# Core dependencies for /podcast_summary command
+youtube-transcript-api>=0.6.2
+yt-dlp>=2024.8.6
+pdfkit>=1.0.0
+PyYAML>=6.0.1
+requests>=2.31.0
+beautifulsoup4>=4.12.2
+
+# Optional dependencies for enhanced functionality
+lxml>=4.9.3
+html5lib>=1.1

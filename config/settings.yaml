@@ -1,0 +1,25 @@
+ai_analysis:
+  confidence_threshold: 0.7
+  extract_timestamps: false
+  focus_areas:
+  - insights
+  - alpha
+  - actionable_takeaways
+  include_quotes: true
+  summary_length: detailed
+logging:
+  level: INFO
+  log_file: logs/podcast_summary.log
+  log_to_file: true
+output:
+  filename_format: youtube-research-{date}.md
+  include_timestamps: true
+  include_video_metadata: true
+  max_summary_length: 2000
+  pdf_styling: professional
+processing:
+  chunk_size: 8000
+  concurrent_channels: 3
+  max_transcript_length: 50000
+  retry_attempts: 3
+  retry_delay: 5
