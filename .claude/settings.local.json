@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "Read",
+      "Write",
+      "Bash(npm:*)",
+      "Bash(yt-dlp:*)",
+      "Bash(uv:*)",
+      "Bash(python:*)",
+      "Read(//Users/raffa/Library/CloudStorage/GoogleDrive-raffa.geneletti@gmail.com/My Drive/A_Onedrive/LAVORO/Outlier Ventures/AI initiative/Research1/AgenticResearch/**)",
+      "SlashCommand(/summarize:*)",
+      "SlashCommand(/podcast_report @0xresearchPodcast --days=7)",
+      "SlashCommand(/podcast_report:*)",
+      "Read(//Users/raffa/Library/CloudStorage/GoogleDrive-raffa.geneletti@gmail.com/My Drive/A_Onedrive/LAVORO/Outlier Ventures/AI initiative/Research1/Category Owner Research/**)",
+      "WebFetch(domain:python.langchain.com)",
+      "Read(//Users/raffa/Library/CloudStorage/GoogleDrive-raffa.geneletti@gmail.com/**)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
