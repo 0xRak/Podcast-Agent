@@ -1,20 +1,26 @@
 aliases:
+  0xresearch: 0xresearchPodcast
   all_in: allinchamath
   bankless: banklesshq
   empire: empirepodcast
+  every: EveryInc
   forward_guidance: ForwardGuidanceBW
   joe_rogan: joerogan
+  langchain: LangChain
   latent_space: latentspacepod
   lex: lexfridman
-  0xresearch: 0xresearchPodcast
+  yc: ycombinator
 categories:
   ai:
   - lexfridman
   - latentspacepod
   - theaipodcast
+  - EveryInc
+  - LangChain
   business:
   - allinchamath
   - naval
+  - ycombinator
   crypto:
   - empirepodcast
   - ForwardGuidanceBW
@@ -25,13 +31,34 @@ categories:
   general:
   - joerogan
 channels:
+  0xresearchPodcast:
+    category: crypto
+    display_name: 0xResearch
+    enabled: true
+    last_processed: '2025-10-02T15:49:26.296471'
+    priority: high
+    url: https://www.youtube.com/@0xresearchPodcast
+  EveryInc:
+    category: ai
+    display_name: Every
+    enabled: true
+    last_processed: '2025-10-07T10:40:14.049313'
+    priority: high
+    url: https://www.youtube.com/@EveryInc
   ForwardGuidanceBW:
     category: crypto
     display_name: Forward Guidance
     enabled: true
-    last_processed: '2025-09-25T11:00:51.541452'
+    last_processed: '2025-12-14T11:38:52.528482'
     priority: high
     url: https://www.youtube.com/@ForwardGuidanceBW
+  LangChain:
+    category: ai
+    display_name: LangChain
+    enabled: true
+    last_processed: '2025-10-15T15:51:51.288522'
+    priority: high
+    url: https://www.youtube.com/@LangChain
   allinchamath:
     category: business
     display_name: All-In with Chamath, Jason, Sacks & Friedberg
@@ -57,7 +84,7 @@ channels:
     category: crypto
     display_name: Empire
     enabled: true
-    last_processed: null
+    last_processed: '2025-10-21T16:09:04.788051'
     priority: high
     url: https://www.youtube.com/@empirepodcast
   joerogan:
@@ -95,13 +122,13 @@ channels:
     last_processed: null
     priority: medium
     url: https://www.youtube.com/@theaipodcast
-  0xresearchPodcast:
-    category: crypto
-    display_name: 0xResearch
+  ycombinator:
+    category: business
+    display_name: Y Combinator
     enabled: true
-    last_processed: '2025-09-25T11:56:05.377'
+    last_processed: '2025-10-13T15:31:03.347051'
     priority: high
-    url: https://www.youtube.com/@0xresearchPodcast
+    url: https://www.youtube.com/@ycombinator
 default_settings:
   days_lookback: 7
   output_directory: podcast_summaries

@@ -5,8 +5,62 @@
 **Priority:** Immediate
 **Estimated Effort:** 2-3 days
 
-### Combined `/podcast-report` Command
+### ✅ Combined `/podcast-report` Command
+**Status:** Completed
 Create single command that runs extract + summarize automatically, eliminating the need for manual two-step workflow.
+
+### ✅ Channel Additions & Expansion
+**Status:** Ongoing
+**Recent Additions:**
+- **LangChain** (@LangChain) - Added October 15, 2025
+  - Category: AI
+  - Priority: High
+  - Focus: Agent development, LLM tooling, context engineering
+  - First summary: "Context Engineering for AI Agents with LangChain and Manus" webinar
+- **Every** (@EveryInc) - Added October 7, 2025
+  - Category: AI
+  - Priority: High
+  - Focus: MCP servers, AI infrastructure
+- **Y Combinator** (@ycombinator) - Added October 13, 2025
+  - Category: Business
+  - Priority: High
+  - Focus: Startup advice, founder interviews
+
+### ✅ PDF Export Tool `/generate-pdf`
+**Status:** Completed (HTML output) | Future: Automatic PDF
+**Implementation:**
+- Creates professionally formatted HTML files from markdown summaries
+- Pandoc-based conversion with GitHub styling, TOC, and code highlighting
+- Users can print HTML to PDF via browser (Cmd+P → Save as PDF)
+
+**Current Limitations:**
+- Requires manual browser printing OR BasicTeX installation for automatic PDF generation
+- All Mac-compatible PDF libraries have system dependency issues:
+  - wkhtmltopdf: Deprecated, removed from Homebrew
+  - weasyprint: Requires Pango/GObject system libraries
+  - pypandoc: Requires PDF engine (LaTeX/BasicTeX)
+
+**Future Enhancement Options:**
+1. **Automatic PDF (requires BasicTeX):**
+   - Install: `brew install basictex`
+   - Tool will automatically generate PDFs when available
+
+2. **Cloud PDF Service (future):**
+   - Use cloud-based HTML→PDF conversion service
+   - No local dependencies required
+   - Potential API costs to consider
+
+**Usage:**
+```bash
+# Single file to HTML
+/generate-pdf podcast_summaries/my-summary.md
+
+# Batch convert all summaries
+/generate-pdf podcast_summaries/
+
+# Custom output directory
+/generate-pdf podcast_summaries/ --output=pdfs/
+```
 
 ### Weekly Batch Processing `/weekly-podcast-report`
 Category-based weekly reports with enhanced format:
@@ -294,4 +348,4 @@ output:
 
 ---
 
-*Roadmap last updated: January 15, 2025*
+*Roadmap last updated: October 15, 2025*
