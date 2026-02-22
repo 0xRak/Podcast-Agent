@@ -1,135 +1,178 @@
+# AI Intelligence Feed — Channel Configuration
+# Last updated: 2026-02-22
+# Priority levels: high / medium / low / monitor
+# Sources: youtube / newsletter / instagram (manual only)
+
 aliases:
-  0xresearch: 0xresearchPodcast
-  all_in: allinchamath
-  bankless: banklesshq
-  empire: empirepodcast
-  every: EveryInc
-  forward_guidance: ForwardGuidanceBW
-  joe_rogan: joerogan
-  langchain: LangChain
-  latent_space: latentspacepod
-  lex: lexfridman
-  yc: ycombinator
+  engineer: engineerprompt
+  sam: samwitteveenai
+  aieng: aidotengineer
+  cole: colemedin
+  every: everyinc
+  jason: aijasonz
+
 categories:
-  ai:
-  - lexfridman
-  - latentspacepod
-  - theaipodcast
-  - EveryInc
-  - LangChain
-  business:
-  - allinchamath
-  - naval
-  - ycombinator
-  crypto:
-  - empirepodcast
-  - ForwardGuidanceBW
-  - banklesshq
-  - 0xresearchPodcast
-  education:
-  - davidperell
-  general:
-  - joerogan
+  ai_engineering:
+    - aidotengineer
+    - samwitteveenai
+    - engineerprompt
+  ai_products_business:
+    - everyinc
+    - aijasonz
+  ai_automation:
+    - colemedin
+    - aijasonz
+  newsletter:
+    - every_to
+  monitor:
+    - ailabs_393
+  manual_only:
+    - edhonour_instagram
+
 channels:
-  0xresearchPodcast:
-    category: crypto
-    display_name: 0xResearch
-    enabled: true
-    last_processed: '2025-10-02T15:49:26.296471'
+
+  # ── HIGH PRIORITY ─────────────────────────────────────────────
+
+  aidotengineer:
+    display_name: "AI Engineer"
+    url: "https://youtube.com/@aidotengineer"
+    category: ai_engineering
     priority: high
-    url: https://www.youtube.com/@0xresearchPodcast
-  EveryInc:
-    category: ai
-    display_name: Every
-    enabled: true
-    last_processed: '2025-10-07T10:40:14.049313'
-    priority: high
-    url: https://www.youtube.com/@EveryInc
-  ForwardGuidanceBW:
-    category: crypto
-    display_name: Forward Guidance
-    enabled: true
-    last_processed: '2025-12-14T11:38:52.528482'
-    priority: high
-    url: https://www.youtube.com/@ForwardGuidanceBW
-  LangChain:
-    category: ai
-    display_name: LangChain
-    enabled: true
-    last_processed: '2025-10-15T15:51:51.288522'
-    priority: high
-    url: https://www.youtube.com/@LangChain
-  allinchamath:
-    category: business
-    display_name: All-In with Chamath, Jason, Sacks & Friedberg
+    source_type: youtube
+    focus: ["agent development", "LLM engineering", "AI infrastructure", "benchmarks"]
+    ingestion:
+      days_lookback: 7
+      videos_per_run: 2
+    notes: "Dense technical signal. High value for engineering decisions."
     enabled: true
     last_processed: null
+
+  samwitteveenai:
+    display_name: "Sam Witteveen"
+    url: "https://youtube.com/@samwitteveenai"
+    category: ai_engineering
     priority: high
-    url: https://www.youtube.com/@allinchamath
-  banklesshq:
-    category: crypto
-    display_name: Bankless
+    source_type: youtube
+    focus: ["LLMs", "agents", "LangChain", "Google AI", "RAG", "multimodal"]
+    ingestion:
+      days_lookback: 7
+      videos_per_run: 2
+    notes: "Reliable educator. Covers Google AI deeply — good counterbalance to Anthropic-centric view."
     enabled: true
     last_processed: null
+
+  everyinc:
+    display_name: "Every Inc (YouTube)"
+    url: "https://youtube.com/@everyinc"
+    category: ai_products_business
     priority: high
-    url: https://www.youtube.com/@banklesshq
-  davidperell:
-    category: education
-    display_name: David Perell
+    source_type: youtube
+    focus: ["AI products", "business strategy", "engineering culture", "AI-native companies"]
+    ingestion:
+      days_lookback: 7
+      videos_per_run: 1
+    notes: "AI-focused media house. Product + business lens. High signal-to-noise."
     enabled: true
     last_processed: null
+
+  every_to:
+    display_name: "Every Newsletter (every.to)"
+    url: "https://every.to"
+    rss_url: "https://every.to/feed"
+    category: newsletter
+    priority: high
+    source_type: newsletter
+    focus: ["AI essays", "frontier models", "AI products", "engineering philosophy"]
+    ingestion:
+      articles_per_run: 3
+      days_lookback: 7
+    notes: "100k subscribers. Trusted by builders. Best long-form AI analysis available."
+    enabled: true
+    last_processed: null
+
+  # ── MEDIUM PRIORITY ───────────────────────────────────────────
+
+  engineerprompt:
+    display_name: "Prompt Engineering"
+    url: "https://youtube.com/@engineerprompt"
+    category: ai_engineering
     priority: medium
-    url: https://www.youtube.com/@davidperell
-  empirepodcast:
-    category: crypto
-    display_name: Empire
-    enabled: true
-    last_processed: '2025-10-21T16:09:04.788051'
-    priority: high
-    url: https://www.youtube.com/@empirepodcast
-  joerogan:
-    category: general
-    display_name: The Joe Rogan Experience
+    source_type: youtube
+    focus: ["prompt engineering", "AI workflows", "LLM usage patterns", "tutorials"]
+    ingestion:
+      days_lookback: 7
+      videos_per_run: 1
+    notes: "More educational/tutorial. Good for prompt patterns and workflow ideas. Lower technical density."
     enabled: true
     last_processed: null
+
+  aijasonz:
+    display_name: "AI Jason"
+    url: "https://youtube.com/@aijasonz"
+    category: ai_automation
     priority: medium
-    url: https://www.youtube.com/@joerogan
-  latentspacepod:
-    category: ai
-    display_name: Latent Space
+    source_type: youtube
+    focus: ["AI automation", "no-code/low-code AI", "workflow tools", "AI for business"]
+    ingestion:
+      days_lookback: 7
+      videos_per_run: 1
+    notes: "Practical automation patterns. Good for tooling ideas and non-technical AI use cases."
     enabled: true
     last_processed: null
-    priority: high
-    url: https://www.youtube.com/@latentspacepod
-  lexfridman:
-    category: ai
-    display_name: Lex Fridman Podcast
-    enabled: true
-    last_processed: '2025-09-12T16:57:43.346125'
-    priority: high
-    url: https://www.youtube.com/@lexfridman
-  naval:
-    category: business
-    display_name: Naval
-    enabled: true
-    last_processed: null
-    priority: high
-    url: https://www.youtube.com/@naval
-  theaipodcast:
-    category: ai
-    display_name: The AI Podcast
-    enabled: true
-    last_processed: null
+
+  colemedin:
+    display_name: "Cole Medin"
+    url: "https://youtube.com/@colemedin"
+    category: ai_automation
     priority: medium
-    url: https://www.youtube.com/@theaipodcast
-  ycombinator:
-    category: business
-    display_name: Y Combinator
+    source_type: youtube
+    focus: ["AI agents", "n8n", "automation pipelines", "AI tooling"]
+    ingestion:
+      days_lookback: 7
+      videos_per_run: 1
+    notes: "Solid for automation architecture and n8n workflows. Complementary to engineering content."
     enabled: true
-    last_processed: '2025-10-13T15:31:03.347051'
-    priority: high
-    url: https://www.youtube.com/@ycombinator
+    last_processed: null
+
+  # ── MONITOR (low priority, evaluate before fully enabling) ────
+
+  ailabs_393:
+    display_name: "AI Labs"
+    url: "https://youtube.com/@ailabs-393"
+    category: monitor
+    priority: low
+    source_type: youtube
+    focus: ["unknown — needs evaluation"]
+    ingestion:
+      days_lookback: 14
+      videos_per_run: 1
+    notes: "Small/unknown channel. Monitor a few runs before committing resources. Evaluate relevance."
+    enabled: false
+    last_processed: null
+
+  # ── MANUAL ONLY (no automated ingestion possible) ─────────────
+
+  edhonour_instagram:
+    display_name: "Ed Honour (Instagram)"
+    url: "https://www.instagram.com/edhonour"
+    category: manual_only
+    priority: low
+    source_type: instagram
+    focus: ["AI/tech content", "social commentary"]
+    ingestion:
+      mode: "manual_link_submission"
+    notes: >
+      Instagram has no transcript/API access. Handle via manual link submission:
+      Raf sends post links to the Discord ingestion channel → agent picks up and summarises.
+      Do NOT attempt automated scraping (ToS violation).
+    enabled: false
+    last_processed: null
+
 default_settings:
   days_lookback: 7
-  output_directory: podcast_summaries
   videos_per_channel: 1
+  output_directory: podcast_summaries
+  report_schedule: "daily"
+  report_time_utc: "00:00"  # Adjust to Raf's morning (UTC+9 = ~00:00 UTC)
+  delivery_channel: discord
+  report_format: "text_with_links"  # No images/video for now
